@@ -1,9 +1,14 @@
 import React from 'react';
- import Nav from './Nav';
+import logo from '../assets/logo.svg';
+import Nav from './Nav';
+
 
  const Header = () => {
    return (
-     <header>Little Lemon</header>
+      <header>
+        <img src={logo} alt="logo" />
+        <Nav />
+      </header>
    );
  };
 
