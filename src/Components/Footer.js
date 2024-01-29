@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from "react-router-dom";
 import Nav from './Nav';
 import footerLogo from '../assets/logo-footer.png';
+import "./Footer.css";
 
 
  const Footer = () => {
@@ -9,6 +10,8 @@ import footerLogo from '../assets/logo-footer.png';
       <footer>
         <section>
           <img src={footerLogo} alt='logo' />
+        </section>
+        <section>
           <Nav />
         </section>
         <section>
