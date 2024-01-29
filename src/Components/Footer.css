@@ -1,0 +1,22 @@
+
+footer {
+    display: flex;
+  }
+  footer section:first-child {
+    flex: 1;
+  }
+  footer section {
+    flex: 2;
+  }
+  footer img {
+    max-width: 5em;
+  }
+  @media all and (max-width: 600px) {
+    footer {
+      flex-flow: column wrap;
+      align-items: center;
+    }
+    footer section:first-child, footer section {
+      flex: 0 0 100%;
+    }
+  }
