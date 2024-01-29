@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import Nav from './Nav';
+import NavLinks from './NavLinks';
 import footerLogo from '../assets/logo-footer.png';
 import "./Footer.css";
 
@@ -12,7 +12,7 @@ import "./Footer.css";
           <img src={footerLogo} alt='logo' />
         </section>
         <section>
-          <Nav />
+          <NavLinks show={true}/>
         </section>
         <section>
           <h3>Contact</h3>

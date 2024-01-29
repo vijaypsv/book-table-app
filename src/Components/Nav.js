@@ -1,29 +1,20 @@
-import React from 'react';
+import { useState } from 'react';
+import hamburger from '../assets/hamburger.svg';
+import NavLinks from './NavLinks';
 
  const Nav = () => {
+
+  const [nav, setNav] = useState(false);
+
+  const handleClick = () => {
+      return setNav(!nav);
+  };
+
    return (
-     <nav>
-       <ul>
-         <li>
-           <a href='/'>Home</a>
-         </li>
-         <li>
-           <a href='/about'>About</a>
-         </li>
-         <li>
-           <a href='/menu'>Menu</a>
-         </li>
-         <li>
-           <a href='/reservations'>Reservations</a>
-         </li>
-         <li>
-           <a href='/order'>Order Online</a>
-         </li>
-         <li>
-           <a href='/login'>Login</a>
-         </li>
-       </ul>
-     </nav>
+    <>
+      <img className="hamburger" src={hamburger} alt="hamburger-menu" onClick={() => handleClick()}/>
+      <NavLinks show={nav}/>
+     </>
    );
  };
 
