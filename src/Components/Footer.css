@@ -29,6 +29,18 @@ footer img {
   }
 }
 
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin: 0.5em 0;
+}
+
+.footer-links a {
+  color: white;
+}
 .social-media {
   padding: 0;
 }
@@ -38,7 +50,18 @@ i.bi {
   font-size: 2em;
   color: white;
 }
+
 @media all and (max-width: 600px) {
+  .footer-links a {
+    color: #495d57;
+  }
+  section.footer-contact {
+    text-align: center;
+  }
+  .social-media {
+    justify-content: center;
+    display: flex;
+  }
   i.bi {
     color: #495d57;
   }

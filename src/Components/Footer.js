@@ -8,13 +8,13 @@ import "./Footer.css";
  const Footer = () => {
    return (
       <footer>
-        <section>
+        <section className='footer-logo'>
           <img src={footerLogo} alt='logo' />
         </section>
-        <section>
+        <section className='footer-links'>
           <NavLinks hideMobile={false}/>
         </section>
-        <section>
+        <section className='footer-contact'>
           <h3>Contact</h3>
           <address>
             Little Lemon <br />
@@ -23,7 +23,7 @@ import "./Footer.css";
             USA
           </address>
         </section>
-        <section>
+        <section className='footer-social-media-icons'>
           <h3>Social Media links</h3>
           <ul className='social-media'>
             <Link to="https://www.facebook.com/">
