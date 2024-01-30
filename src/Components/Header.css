@@ -38,7 +38,7 @@ header ul li a {
   font-size: 1em;
 }
 
-.hamburger, .hide {
+.hamburger {
   display: none;
 }
 
@@ -81,5 +81,9 @@ a:visited, Link:visited, a:link, Link:link {
 
   .hamburger {
     display: block;
+  }
+
+  .hide-mobile {
+    display: none;
   }
 }

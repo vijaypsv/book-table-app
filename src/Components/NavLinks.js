@@ -3,7 +3,7 @@
 
    return (
      <nav >
-       <ul className={`${props.show ? '' : 'hide'}`}>
+       <ul className={`${props.hideMobile ? 'hide-mobile' : ''}`}>
          <li>
            <a href='/'>Home</a>
          </li>

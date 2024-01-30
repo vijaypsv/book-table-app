@@ -4,16 +4,16 @@ import NavLinks from './NavLinks';
 
  const Nav = () => {
 
-  const [nav, setNav] = useState(false);
+  const [hideMobile, setHideMobile] = useState(true);
 
   const handleClick = () => {
-      return setNav(!nav);
+      return setHideMobile(!hideMobile);
   };
 
    return (
     <>
       <img className="hamburger" src={hamburger} alt="hamburger-menu" onClick={() => handleClick()}/>
-      <NavLinks show={nav}/>
+      <NavLinks hideMobile={hideMobile}/>
      </>
    );
  };
