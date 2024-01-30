@@ -4,11 +4,11 @@ import Specials from "../home/Specials";
 import Testimonials from "../home/Testimonials";
 
 const Home = () => {
-  return <main>
+  return <>
     <Hero/>
     <Specials/>
     <Testimonials/>
     <About/>
-  </main>;
+  </>;
 };
 export default Home;

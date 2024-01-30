@@ -8,35 +8,37 @@ import Login from './pages/Login';
 import Confirmation from './pages/Confirmation';
 
  const Main = () => {
-   return <Routes>
-            <Route path="/" element= {
-            <Home />
-            } />
+   return <main id="content">
+            <Routes>
+              <Route path="/" element= {
+              <Home />
+              } />
 
-            <Route path="/about" element={
-            <About />
-            } />
+              <Route path="/about" element={
+              <About />
+              } />
 
-            <Route path="/menu" element={
-            <Menu />
-            } />
+              <Route path="/menu" element={
+              <Menu />
+              } />
 
-            <Route path="/reservations" element= {
-            <Reservations />
-            } />
+              <Route path="/reservations" element= {
+              <Reservations />
+              } />
 
-            <Route path="/order" element= {
-            <Order />
-            } />
+              <Route path="/order" element= {
+              <Order />
+              } />
 
-            <Route path="/login" element= {
-            <Login />
-            } />
+              <Route path="/login" element= {
+              <Login />
+              } />
 
-            <Route path="/confirmation"  element= {
-            <Confirmation />
-            } />
-        </Routes>
+              <Route path="/confirmation"  element= {
+              <Confirmation />
+              } />
+          </Routes>
+        </main>
  };
 
  export default Main;

@@ -12,7 +12,7 @@ import NavLinks from './NavLinks';
 
    return (
     <>
-      <img className="hamburger" src={hamburger} alt="hamburger-menu" onClick={() => handleClick()}/>
+      <img className="hamburger" aria-label='show menu' src={hamburger} alt="hamburger-menu" onClick={() => handleClick()}/>
       <NavLinks hideMobile={hideMobile}/>
      </>
    );

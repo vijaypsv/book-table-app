@@ -9,7 +9,7 @@ import "./Footer.css";
    return (
       <footer>
         <section className='footer-logo'>
-          <img src={footerLogo} alt='logo' />
+          <img src={footerLogo} alt='footer logo' />
         </section>
         <section className='footer-links'>
           <NavLinks hideMobile={false}/>
@@ -26,13 +26,13 @@ import "./Footer.css";
         <section className='footer-social-media-icons'>
           <h3>Social Media links</h3>
           <ul className='social-media'>
-            <Link to="https://www.facebook.com/">
+            <Link to="https://www.facebook.com/" aria-label='facebook'>
                 <i className="bi bi-facebook"></i>
             </Link>
-            <Link to="https://www.instagram.com/">
+            <Link to="https://www.instagram.com/" aria-label='instagram'>
                 <i className="bi bi-instagram"></i>
             </Link>
-            <Link to="http://www.twitter.com/">
+            <Link to="http://www.twitter.com/" aria-label='twitter'>
                 <i className="bi bi-twitter-x"></i>
             </Link>
           </ul>

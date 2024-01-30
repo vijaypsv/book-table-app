@@ -6,8 +6,8 @@ import "./Header.css";
  const Header = () => {
 
    return (
-      <header>
-        <img className="logo" src={logo} alt="logo" />
+      <header className="top-navigation">
+        <a href='/' aria-label='Home'><img className="logo" src={logo} alt="logo" /></a>
         <Nav />
       </header>
    );
