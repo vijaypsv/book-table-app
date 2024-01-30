@@ -12,7 +12,7 @@ import "./Footer.css";
           <img src={footerLogo} alt='logo' />
         </section>
         <section>
-          <NavLinks show={true}/>
+          <NavLinks hideMobile={false}/>
         </section>
         <section>
           <h3>Contact</h3>
@@ -25,7 +25,7 @@ import "./Footer.css";
         </section>
         <section>
           <h3>Social Media links</h3>
-          <ul>
+          <ul className='social-media'>
             <Link to="https://www.facebook.com/">
                 <i className="bi bi-facebook"></i>
             </Link>
